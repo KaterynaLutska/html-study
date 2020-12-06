@@ -1,265 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trafalgar</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!-- page-header -->
     <header>
-      <nav>
-        <a href="./"><img src="./image/logo.svg" alt="logo of company" /></a>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="#find">Our services</a></li>
-          <li><a href="#apps">Apps</a></li>
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">About us</a></li>
+      <div class="container page-header">
+          <a class="logo header" href="./">
+            <svg class="logo-icon" width="18" height="20">
+              <use href="./images/sprite.svg#icon-logo-icon"></use>
+            </svg>
+            Beerd Crawl</a
+          >
+            <nav>
+              <ul class="menu list">
+          <li><a class="menu-link" href="">Хто ми</a></li>
+          <li><a class="menu-link" href="">Про Мовембер</a></li>
+          <li><a class="menu-link" href="">Правила</a></li>
+          <li><a class="menu-link" href="">Голосування</a></li>
+          <li><a class="menu-link" href="">Призи</a></li>
         </ul>
-      </nav>
+        </nav>
+        <button class="btn-menu" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+          <use class="icon-cross" href="./images/sprite.svg#icon-icon-cross"></use>
+          <use class="icon-menu"  href="./images/sprite.svg#icon-menu-icon"></use>
+                  </svg>
+        </button> 
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="menu-modal-list list">
+            <li><a class="menu-modal-link menu-link" href="">Хто ми</a></li>
+            <li><a class="menu-modal-link menu-link" href="">Про Мовембер</a></li>
+            <li><a class="menu-modal-link menu-link" href="#join-us-id">Правила</a></li>
+            <li><a class="menu-modal-link menu-link" href="">Голосування</a></li>
+            <li><a class="menu-modal-link menu-link" href="">Призи</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <section>
-      <h1>Virtual healthcare for you</h1>
-    </section>
-    <p>
-      Trafalgar provides progressive, and affordable healthcare, accessible on
-      mobile and online for everyone
-    </p>
-    <button>Consult today</button>
-    <img
-      src="./image/trafalgar-header.svg"
-      alt="doctor vs patient"
-      width="200"
-    />
-    <section>
-      <h2 id="find">Our services</h2>
-      <p>
-        We provide to you the best choiches for you. Adjust it to your health
-        needs and make sure your undergo treatment with our highly qualified
-        doctors you can consult with us which type of service is suitable for
-        your health
-      </p>
-      <ul>
-        <li>
-          <h3>Search doctor</h3>
-          <p>
-            Choose your doctor from thousands of specialist, general, and
-            trusted hospitals
+    <main>
+        <section class="hero">
+          <div class="container hero-container">
+          <h1 class="hero-container-title">Рух Мовембер в Україні</h1>
+          <p class="hero-container-text">
+            Запрошуємо приєднатися до Всеукраїнського руху Мовембер. </br>
+            До кінця акції залишилось 21 день 15 годин 08 хвилин 42 секунди
           </p>
-        </li>
-        <li>
-          <h3>Details info</h3>
-          <p>
-            ree consultation with our trusted doctors and get the best
-            recomendations
+          <p class="counter">21 : 15 : 08 : 42</p>
+          <button type="button" class="button">Стати вусабристом</button>
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="container">
+            <div class="about-us-container">
+            <div class="about-us-container-text"> 
+               <h2>Хто ми і яка наша мета</h2>
+               <p class="paragraph"> Мережа барбершопів <span class="firm">“Firm”</span> проводить діджитал активацію з метою
+                популяризації в Україні руху Мовембер. </p>
+                <p> Всі кошти від акивації переходять у благодійний фонд Вусабрь.</p>
+                <button type="button" class="button">Прийняти участь</button>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="./images/phone/photophone1.jpg 1x, 
+                          ./images/phone/photophone1@2x.jpg 2x" media="(max-width: 1280px)" />
+                          <source srcset="./images/photo1.jpg 1x, 
+                          ./images/photo1@2x.jpg 2x" media="(min-width: 1280px)" />
+                          <img src="./images/photo1.jpg" alt="Наш зал для стрижки" />
+                        </picture>
+                </div>
+              </div>
+          <div class="about-us-money">
+            <p class="about-us-money-title"> 5 067 833 грн</p>
+            <p class="about-us-money-text">Зібрано на цей момент</p>
+          </div>
+        </div>
+      </section>
+        <section class="about-us for-desktop">
+          <div class="container">
+          <picture>
+            <source srcset="./images/photo2.jpg 1x, 
+                                    ./images/photo2@2x.jpg 2x" media="(min-width: 1280px)" />
+            <img src="./images/photo2.jpg" alt= "Наші працівники"/>
+          </picture>
+          <div class="about-us-box"> 
+          <h2>Що треба знати про Мовембер</h2>
+          <p class="about-us-text">
+          Із 1 по 30 листопада чоловіки в різних країнах світу починають масово
+          відрощувати вуса та бороди. </br>
+          
+          Тому листопад ще називають Мовембером, що
+          у перекладі з англійської — "Вусопад". </br>
+          
+          Кожен Вусопад чоловіки
+          присвячують <span class="firm"> руху проти раку передміхурової залози</span>, що є найпоширенішою
+          чоловічою онкологією. </br>
+          В умовах своєчасного виявлення пухлини, в
+          більшості випадків, захворювання повністю виліковне.
+         </p>
+        <button type="button" class="button">Прийняти участь</button>
+        </div>
+      </div>
+      </section>
+        <section class="join-us" id="join-us-id">
+          <div class="container join-us-container"> 
+          <h2 class="join-us-title">Як прийняти участь</h2>
+          <p class="join-us-text">
+            Дотримуючись простої інструкції, Ви з легкістю зможете стати
+            Вусабристом і виграти цінні призи!
           </p>
-        </li>
-        <li>
-          <h3>Online pharmacy</h3>
+          <ul class="list">
+            <li>
+              <picture>
+                  <source srcset="./images/phone/photolistphone1.jpg 1x, 
+                                            ./images/phone/photolistphone1@2x.jpg 2x" media="(max-width: 1280px)" />
+                  <source srcset="./images/photolistdesk1.jpg 1x, 
+                                            ./images/photolistdesk1@2x.jpg 2x" media="(min-width: 1280px)" />
+                  <img src="./images/photolistdesk1.jpg" alt="Наші працівники" />
+              </picture>
+              <p>Створи мовембер лук</p>
+            </li>
+            <li>
+              <picture>
+              <source srcset="./images/phone/photolistphone2.jpg 1x, 
+                                                        ./images/phone/photolistphone2@2x.jpg 2x" media="(max-width: 1280px)" />
+              <source srcset="./images/photolistdesk2.jpg 1x, 
+                                                        ./images/photolistdesk2@2x.jpg 2x" media="(min-width: 1280px)" />
+              <img src="./images/photolistdesk2.jpg" alt="Наші працівники" />
+              </picture>
+              <p>Реєструй чек</p>
+            </li>
+            <li>
+              <picture>
+              <source srcset="./images/phone/photolistphone3.jpg 1x, 
+                                                        ./images/phone/photolistphone3@2x.jpg 2x" media="(max-width: 1280px)" />
+              <source srcset="./images/photolistdesk3.jpg 1x, 
+                                                        ./images/photolistdesk3@2x.jpg 2x" media="(min-width: 1280px)" />
+              <img src="./images/photolistdesk3.jpg" alt="Наші працівники" />
+              </picture>
+              <p>Виставляй фото-лук на голосування</p>
+            </li>
+            <li>
+              <picture> 
+            <source srcset="./images/phone/photolistphone4.jpg 1x, 
+                                                      ./images/phone/photolistphone4@2x.jpg 2x" media="(max-width: 1280px)" />
+            <source srcset="./images/photolistdesk1.jpg 1x, 
+                                                      ./images/photolistdesk4@2x.jpg 2x" media="(min-width: 1280px)" />
+            <img src="./images/photolistdesk4.jpg" alt="Наші працівники" />
+            </picture>
+              <p>повторюй кроки знову</p>
+            </li>
+          </ul>
+          <button type="button" class="button">детальні умови акції</button>
+        </div>
+        </section>
+        <section>
+       <div class="container">
+          <h2>Зареєструй код</h2>
           <p>
-            Buy your medicines with our mobile application with a simple
-            delivery system
+            Важливо памятати, що всі кошти від акивації переходять у благодійний
+            фонд Вусабрь. Більше чеків — більше коштів!
           </p>
-        </li>
-        <li>
-          <h3>Emergency care</h3>
+          <input type="text" />
+          <button tabindex="button" class="button">Відправити</button>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+          <h2>Голосуй за найкращий вусарь лук</h2>
           <p>
-            You can get 24/7 urgent care for yourself or your children and your
-            lovely family
+            Тут ти можеш вибрати найдрайвовішого Вусабриста, а також поділитися
+            з друзями своїм фаворитом у соціальних мережах.
           </p>
-        </li>
-        <li>
-          <h3>Consultation</h3>
+          <button type="button" class="button">Дивитись усіх</button>
+        <ul>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              <h3>Коля Зайкін</h3>
+              <p>1250</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              <h3>Василій Кіт</h3>
+              <p>1258</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              <h3>Герман Шнайдер</h3>
+              <p>890</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              <h3>Артемій Лісовий</h3>
+              <p>756</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              <h3>Глєб Гаврилюк</h3>
+              <p>605</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="" alt="" />
+              <h3>Коля Зайкін</h3>
+              <p>1250</p>
+            </a>
+          </li>
+        </ul>
+        </div>
+        </section>
+        <section>
+          <div class="container">
+          <img src="" alt="" />
+          <h2>Подивись найкращий Beerd Crawl маршрут</h2>
           <p>
-            Free consultation with our trusted doctors and get the best
-            recomendations
+            Дивись, як швидше дістатися до наступного барбершопу Firm, щоб
+            встигнути здійснити наступний “вусатий забіг” і внести свій вклад у
+            боротьбі з раком!
           </p>
-        </li>
-        <li>
-          <h3>Tracking</h3>
-          <p>Track and save your medical history and health data</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <ul>
-        <li>
-          <img
-            src="./image/trafalgar-illustration2.svg"
-            alt="trafalgar-illustration2"
-            width="650"
-          />
-          <h2 id="home">Leading healthcare providers</h2>
+          <button type="button" class="button">Прийняти участь</button>
+        </div>
+        </section>
+        <section>
+          <div class="container">
+          <h2>Призи кращим Вусабристам</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            doloremque assumenda harum provident eius, nobis nemo? Reiciendis
-            sequi facilis asperiores! Ea aliquam excepturi quae blanditiis
-            nesciunt velit, dicta rem consequuntur debitis omnis, ipsa saepe
-            voluptatum totam iure voluptates consectetur commodi accusantium
-            asperiores voluptatibus optio! Hic nesciunt, cumque illo nobis
-            debitis ullam sed odio numquam, laudantium laboriosam eaque dolorem!
-            Illo ex odit aperiam facere quos nobis consectetur, eos
-            reprehenderit minus quasi dignissimos vel ducimus eius reiciendis
-            vitae voluptates iste ea. Cumque laborum delectus fuga enim nesciunt
-            ipsa architecto, atque nobis dignissimos officia soluta, asperiores,
-            rerum non impedit deserunt ullam? Nostrum perferendis impedit nihil
-            porro sequi laudantium? Cupiditate qui expedita excepturi,
-            exercitationem reprehenderit, eligendi iure autem quidem architecto
-            voluptatibus optio, nihil ullam? Doloribus et aliquid laborum eum
-            facere dolor vel temporibus a perferendis eveniet nobis quaerat
-            voluptas magnam ut exercitationem sunt deserunt, laudantium, quia
-            soluta voluptatum tenetur provident magni iste animi! Quia nostrum
-            laudantium dolorem, modi dolores animi illum dicta vero itaque
-            tempore eaque exercitationem eveniet quod labore inventore
-            consequatur non, nemo placeat veritatis! Modi, molestias nobis ea
-            sequi officia reiciendis odio consequatur iusto veritatis aliquam
-            quasi commodi quae quod dolor? Soluta modi amet nisi, tempore dolore
-            provident, quidem facere vel suscipit fugit quae non, cumque sunt?
-            Quidem soluta, dolor eum minus sint fuga assumenda id neque! Nemo ea
-            quos eos ratione sint animi quo doloribus dolorum modi cupiditate.
-            Sapiente mollitia quos repellendus eligendi sequi velit placeat.
-            Dicta explicabo ipsam, repudiandae veritatis sint inventore fuga
-            dolorum nisi odio ut, eligendi ea, est harum facere alias? Iste,
-            aliquid vel. At ex dignissimos iusto? Quaerat nam natus eius id
-            recusandae explicabo fuga placeat officia error quae, quos ad rerum
-            incidunt sint, dolor maxime reprehenderit sit distinctio. Error nam
-            magni optio autem harum saepe eius nisi fugiat beatae voluptates
-            ipsam accusamus inventore nobis deserunt culpa velit tempora
-            placeat, consequuntur, quibusdam fugit odit sequi, animi ut! Ab, quo
-            amet. Quisquam, excepturi voluptate quae dignissimos unde omnis
-            similique esse eveniet at ex fugit. Tempora animi delectus libero
-            tenetur fuga unde at iure suscipit labore, inventore amet magnam
-            exercitationem minus natus eligendi eos dolorum veritatis rerum,
-            molestiae ratione deserunt eveniet! Ratione, sint assumenda saepe
-            nostrum error cumque tenetur pariatur earum nemo! Necessitatibus et
-            earum nam inventore nobis a, maiores error nulla commodi dignissimos
-            fuga fugit cupiditate molestias sint veniam, adipisci architecto
-            iusto accusantium voluptate ad facilis ducimus quas! Voluptate
-            deserunt debitis tenetur, consectetur, minus in illum error et earum
-            mollitia perferendis assumenda quae esse, aliquam officiis molestias
-            corrupti sequi! Impedit illo recusandae nostrum reprehenderit
-            voluptatem, voluptates beatae! Laudantium a velit vitae magni in
-            itaque veritatis. At id fuga explicabo. Tenetur incidunt placeat
-            doloribus molestias saepe. Illo, qui. In, sint, temporibus quam
-            rerum sunt ab odio eos esse atque, quae earum exercitationem
-            praesentium architecto neque eum mollitia iusto dolores sapiente
-            nesciunt eius vel cum maiores. Odit praesentium itaque omnis a
-            voluptatum repellendus doloribus in nam quod natus et, soluta maxime
-            explicabo labore repudiandae fugit corrupti exercitationem, dolore
-            libero eligendi sunt impedit. Ducimus id vero cupiditate maxime,
-            accusamus incidunt assumenda ex debitis tempora dolores, tenetur
-            doloribus porro ipsam nulla voluptatem eum laborum alias. Sapiente
-            laudantium sint consequuntur repudiandae, omnis impedit laborum
-            tempore officiis facere enim, mollitia eos iste, quaerat beatae.
-            Sapiente minima debitis eius porro. Sint illo repellat porro quas
-            facere. Unde cupiditate quibusdam rem voluptatibus eum ex
-            praesentium tenetur vero facilis eveniet dolorem optio, tempore
-            numquam explicabo? Blanditiis enim voluptatibus expedita facere!
-            Exercitationem, dolorum reprehenderit accusantium eaque repudiandae
-            molestias, ipsum corporis, quas iure quidem et vel. Id libero unde
-            qui dolor? Temporibus earum eos necessitatibus, eaque beatae aperiam
-            corporis ipsum rerum esse vel qui, alias pariatur quos amet et.
-            Debitis mollitia sint repellat saepe, blanditiis provident
-            repellendus. Autem dolore repudiandae in. Maiores quasi qui
-            architecto autem ipsa iste dicta laborum nostrum voluptates odit
-            nobis, harum quam facilis commodi, quo repudiandae iusto nemo
-            incidunt laudantium natus eligendi neque molestiae. Dignissimos odio
-            esse suscipit pariatur fugit amet commodi illum unde cumque
-            molestias saepe temporibus asperiores distinctio, a ipsam animi
-            nobis. Incidunt aut architecto eius. Unde numquam natus tempore
-            dolores corrupti, nam explicabo nobis accusantium saepe culpa quidem
-            officiis dolore deserunt fugiat nemo dicta vel! Quod hic architecto
-            aspernatur adipisci! Odio tempore labore quibusdam, odit repellendus
-            dolorum quod maxime alias recusandae cupiditate accusamus quos hic
-            porro velit magnam deleniti beatae facilis modi. Sunt delectus nulla
-            quisquam ratione ex, facilis voluptates rerum sed dicta, possimus
-            enim fugiat asperiores. Et officia expedita, eum eligendi rem
-            officiis sed inventore repellat, ab reprehenderit dolorem aut harum
-            explicabo iure quo necessitatibus nesciunt facere sunt consequuntur
-            minima in quidem consectetur fugiat laborum! Voluptas repudiandae
-            autem nesciunt aliquid eos accusamus sed vitae perferendis voluptate
-            odio. Nisi illum ipsum sapiente hic soluta quo deserunt aliquid quas
-            architecto provident voluptates, aperiam magni, mollitia recusandae
-            dolores minus. Sint quo optio totam vero ipsa culpa ad adipisci odit
-            quisquam. Cumque eaque reiciendis distinctio dolorum illo recusandae
-            earum, explicabo voluptates et. Molestias explicabo nam minus fugit
-            numquam recusandae, tempora, ipsam quis molestiae exercitationem
-            nostrum possimus voluptates nulla fugiat sit repudiandae officia
-            sequi esse, unde itaque accusantium error eos id. Quisquam, ea.
-            Quaerat aliquid facilis a suscipit ducimus amet reiciendis dolorum
-            voluptatibus quas officia! Similique voluptatibus facere deserunt,
-            praesentium minima laborum aliquam porro rerum perferendis. Eum
-            officia minima quasi harum ut possimus illo non mollitia, labore
-            dolorem commodi, fugiat itaque quod ab doloribus doloremque
-            reiciendis ad nesciunt vero. Inventore, ut earum. Modi quibusdam
-            quas repudiandae corporis sapiente cupiditate asperiores, id eaque
-            culpa impedit, ad voluptatibus ut illum quae. Optio exercitationem
-            laudantium enim tempore natus tenetur quos vitae odit dolor labore
-            reiciendis, repellendus ullam! Earum tempora omnis ratione in itaque
-            possimus? Eveniet mollitia soluta esse possimus pariatur hic commodi
-            dolor necessitatibus nemo, corrupti illo ipsum et expedita amet
-            velit voluptatum quam harum aliquid quisquam nesciunt. Et eligendi
-            deleniti a! Commodi similique non necessitatibus recusandae
-            officiis? Ipsum ducimus, beatae odio quam nobis perferendis ipsa
-            corporis voluptas laborum autem temporibus ea fugit error culpa
-            voluptates aspernatur quidem sed a cum voluptate iusto facere optio
-            ex. Placeat reprehenderit error quas deserunt ipsum ipsa. Excepturi,
-            consequatur? Totam porro libero tenetur? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Culpa cumque quasi ratione veniam
-            atque tempore nemo optio cum tempora quia. Cupiditate, voluptatem
-            quia! Obcaecati ea quidem esse cupiditate atque rem eos corrupti
-            quibusdam tempore molestiae autem voluptatibus eveniet, magnam
-            perferendis fugit illo hic pariatur assumenda explicabo nihil
-            quisquam quasi deserunt. Soluta exercitationem eligendi atque vero
-            voluptates repellendus aspernatur, ipsum hic ex nostrum officia
-            magni consequuntur? Tenetur cupiditate illum dolor accusantium
-            officiis magni! Alias reprehenderit debitis ipsa repellat
-            voluptatibus quasi, earum totam incidunt commodi quisquam placeat,
-            quam iure praesentium inventore fugit explicabo voluptates
-            repudiandae, vitae suscipit nobis facere. Unde illum maiores
-            adipisci corrupti molestiae praesentium quas totam ad? Non aut
-            molestias id. Maxime, amet? Tempore, molestias, labore ab optio,
-            veniam esse et cupiditate nesciunt placeat iusto laudantium nemo
-            qui! Tempora incidunt, eum laboriosam quos adipisci, vero eligendi
-            error omnis et nostrum a, aliquam asperiores pariatur repudiandae
-            necessitatibus doloremque voluptates. Incidunt, natus eius tempore
-            delectus quos cumque molestiae voluptas velit ea esse iste neque ad
-            deserunt, perferendis temporibus voluptate eos praesentium iure
-            facilis enim placeat optio. Qui sed quasi repellendus excepturi quae
-            laboriosam culpa deleniti, nihil asperiores autem officiis assumenda
-            ab accusantium possimus soluta! Voluptatibus modi laudantium earum,
-            id consequuntur dolores nam molestiae exercitationem ab. Fugit,
-            animi repellat ratione eligendi illo assumenda voluptate maiores nam
-            officiis aspernatur iste necessitatibus architecto rerum consectetur
-            repudiandae velit aliquid facere, itaque maxime. Unde minus enim
-            libero rerum quas, corrupti nam debitis quis cupiditate odio maiores
-            fugiat inventore eaque voluptatibus qui adipisci, laborum
-            exercitationem expedita repellendus nisi beatae voluptatum culpa
-            doloremque. Ratione doloremque saepe, eos nostrum perspiciatis ipsum
-            voluptate sapiente alias fuga dolor unde minima quam ipsa, labore
-            dolorem placeat, optio numquam aut accusamus consequuntur laudantium
-            enim rerum qui? Blanditiis, itaque. Possimus harum ipsa similique
-            quisquam vitae temporibus beatae cumque. Reiciendis debitis
-            voluptates nam necessitatibus mollitia cum.
+            Вигравай: щодня — засоби для догляду за вусами та бородою, щомісяця
+            — безкоштовний похід до барбера та суперприз — мотоцикл Harley
+            Davidson.
           </p>
-          <button>Learn more</button>
-        </li>
-        <li>
-          <img
-            src="./image/trafalgar-illustration3.svg"
-            alt="trafalgar-illustration2"
-            width="650"
-          />
-          <h2 id="apps">Download our mobile apps</h2>
+          <button type="button" class="button">Скоріше приєднатися</button>
+          <ul>
+            <li>
+              <h3>Щодня</h3>
+              <p>Засоби для догляду за вусами та бородою</p>
+              <img src="" alt="" />
+            </li>
+            <li>
+              <h3>Щомісяця</h3>
+              <p>Бескоштовний похід до барбера</p>
+              <img src="" alt="" />
+            </li>
+            <li>
+              <h3>СУПЕРПРИЗ</h3>
+              <p>Омріяний мотоцикл марки Harley Davidson</p>
+              <img src="" alt="" />
+            </li>
+          </ul>
+        </div>
+        </section>
+        <section>
+          <div class="container">
+          <h2>Встигни побувати в усіх барбершопах Firm!</h2>
           <p>
-            Our dedicated patient engagement app and web portal allow you to
-            access information instantaneously (no tedeous form, long calls, or
-            administrative hassle) and securely
+            FIRM Barbershop I. Михайлівський провулок, 9 FIRM Barbershop II.
+            Вулиця Тарасівська, 40/52 FIRM Barbershop III. Вулиця Антоновича, 3
           </p>
-        </li>
-        <button>Download</button>
-      </ul>
-      <a href="./image/mask3.jpg" download>Скачать картинку</a>
-    </section>
+          <svg>
+            <use></use>
+          </svg>
+          <a
+            class="logo header"
+            href="
+              "
+            >BEERD CRAWL</a
+          >
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+          <img src="" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Firm, 2018</p>
+      <a href=""></a>
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

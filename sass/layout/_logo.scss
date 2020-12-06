@@ -1,0 +1,28 @@
+// logo for header//
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  @include font(700, 14px);
+  line-height: 1.14;
+  font-family: Ubuntu;
+  text-transform: uppercase;
+
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:hover .logo-icon,
+  &:focus .logo-icon {
+    color: $accent-color;
+    fill: $accent-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+  }
+}
+
+.logo-icon {
+  fill: $white;
+  margin-right: 5px;
+}

@@ -1,0 +1,73 @@
+.about-us-container {
+  @include for-size(desktop) {
+    display: flex;
+    text-align: center;
+    &-text {
+      padding-top: 158px;
+      padding-left: 119px;
+      text-align: start;
+    }
+  }
+}
+.about-us-container-text > h2 {
+  margin-bottom: 23px;
+}
+
+.about-us-container-text > button {
+  margin-top: 54px;
+}
+.paragraph {
+  margin-bottom: 23px;
+}
+// .about-us-box {
+//   padding-left: 26px;
+//   padding-right: 41px;
+//   padding-bottom: 75px;
+//   @include for-size(desktop) {
+//     width: 50%;
+//     padding-top: 158px;
+//     padding-right: 112px;
+//     padding-bottom: 170px;
+//     text-align: left;
+//     margin-bottom: 0;
+//   }
+// }
+
+.about-us-money {
+  padding-top: 73px;
+  padding-bottom: 83px;
+  text-align: center;
+
+  background-color: $dark-color;
+  &-title {
+    color: $white;
+    margin-bottom: 6px;
+
+    font-family: Ubuntu;
+    font-weight: 700px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  &-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+
+    color: #999999;
+  }
+  @include for-size(desktop) {
+    width: 100%;
+  }
+}
+
+.firm {
+  font-weight: 700;
+}
+
+.about-us.for-desktop {
+  display: none;
+  @include for-size(desktop) {
+    display: flex;
+  }
+}

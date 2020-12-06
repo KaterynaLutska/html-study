@@ -1,0 +1,46 @@
+.hero-container {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 10.24%,
+    rgba(0, 0, 0, 0.34) 77.9%
+  );
+  background-image: url(../../images/phone/herophone.jpg);
+  background-repeat: repeat &-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+    color: $white;
+    margin-bottom: 14px;
+
+    @include for-size(phone-only) {
+      font-size: 60px;
+      line-height: 1.15;
+      text-align: center;
+    }
+  }
+  &-text {
+    margin-bottom: 37px;
+    @include font(400, 14px);
+    line-height: 1.14;
+    text-align: center;
+    color: $white;
+  }
+  @include for-size(desktop) {
+    background-image: url(../../images/hero.jpg);
+    padding-bottom: 157px;
+  }
+}
+
+.counter {
+  margin-bottom: 32px;
+
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: 1.37;
+  text-align: center;
+
+  color: $white;
+}

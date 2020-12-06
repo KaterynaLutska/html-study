@@ -1,0 +1,68 @@
+.page-header {
+  display: flex;
+  position: relative;
+  background-color: $dark-color;
+  padding-top: 37px;
+  padding-right: 54px;
+  padding-bottom: 40px;
+  padding-left: 54px;
+  justify-content: space-between;
+  align-items: baseline;
+
+  // @include for-size(phone-only) {
+  //   padding-left: 26px;
+  // }
+}
+
+.menu {
+  display: none;
+
+  // @include for-size(desktop) {
+  //   display: flex;
+  // align-items: center;
+  & > li:not(:last-child) {
+    margin-right: 44px;
+  }
+}
+
+.menu-link {
+  @include font(500, 12px);
+  font-family: Ubuntu;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &.is-open {
+    display: block;
+    background-color: $dark-color;
+    // @include for-size(desktop) {
+    //   display: none;
+  }
+}
+
+.menu-modal-list > li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.menu-modal-link.menu-link {
+  font-size: 26px;
+}
